@@ -1,6 +1,6 @@
 {
-  "name": "pyodide",
-  "version": "1.0.0",
+  "name": "pyparser",
+  "version": "0.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "engines" : { 
