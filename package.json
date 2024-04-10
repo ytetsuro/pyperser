@@ -4,9 +4,14 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "test": "export NODE_OPTIONS=--experimental-vm-modules && jest"
+    "test": "export NODE_OPTIONS=--experimental-vm-modules && jest",
+    "build": "tsc"
   },
-  "keywords": ["python", "ast", "parse"],
+  "keywords": [
+    "python",
+    "ast",
+    "parse"
+  ],
   "author": "",
   "license": "MIT",
   "dependencies": {
@@ -16,7 +21,8 @@
     "@swc/core": "^1.4.13",
     "@swc/jest": "^0.2.36",
     "@types/jest": "^29.5.12",
-    "jest": "^29.7.0"
+    "jest": "^29.7.0",
+    "typescript": "^5.4.5"
   },
   "description": ""
 }

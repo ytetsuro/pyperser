@@ -1,5 +1,5 @@
 import { loadPyodide } from "pyodide";
-import type {ModuleNode, Interactive, Expression, FunctionType} from './ast';
+import type {ModuleNode, Interactive, Expression, FunctionType} from './type';
 
 type modeMap = {
   exec: ModuleNode,
