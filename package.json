@@ -1,13 +1,13 @@
 {
   "name": "pyparser",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "engines" : { 
-    "node" : ">=20.0.0"
+    "node" : ">=18.5.0"
   },
   "scripts": {
-    "test": "export NODE_OPTIONS=--experimental-vm-modules && jest",
+    "test": "NODE_OPTIONS=--experimental-vm-modules && jest",
     "build": "tsc"
   },
   "keywords": [
