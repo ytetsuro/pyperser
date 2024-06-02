@@ -69,4 +69,4 @@ ENCODING : 65,
 N_TOKENS : 66,
 // Special definitions for cooperation with parser
 NT_OFFSET : 256,
-};
+} as const;

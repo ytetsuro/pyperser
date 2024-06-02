@@ -1,5 +1,11 @@
 import { loadPyodide } from "pyodide";
-export async function tokenize(code: string) {
+import {TOKEN_TYPES} from './token_types';
+
+type ALL_TOKEN_TYPES = typeof TOKEN_TYPES[keyof typeof TOKEN_TYPES];
+
+type Token = [ALL_TOKEN_TYPES, string, [number, number], [number, number], string];
+
+export async function tokenize(code: string): Promise<Token[]> {
   const pyodide = await loadPyodide();
 
   const ast = pyodide.runPython(`
