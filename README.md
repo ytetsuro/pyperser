@@ -1,6 +1,6 @@
 # pyparser
 
-Python ast parser for Node.js
+Python ast parser and tokenizer for Node.js
 
 ===
 
@@ -15,6 +15,8 @@ Please feel free to PullRequest and Issue.
 ```bash
 $ npm i pyparser
 ```
+
+## AST Parse
 
 ```typescript
 import {parse} from 'pyparser';
@@ -48,6 +50,25 @@ import {parse} from 'pyparser';
       ],
       "type_ignores": []
     }*/
+})();
+```
+
+## Tokenize
+
+```typescript
+import {tokenize} from 'pyparser';
+
+(async () => {
+  const ast = await tokenize('123');
+
+  console.log(ast);
+  /*
+    [
+      [ 2, '123', [ 1, 0 ], [ 1, 3 ], '123' ],
+      [ 4, '', [ 1, 3 ], [ 1, 4 ], '123' ],
+      [ 0, '', [ 2, 0 ], [ 2, 0 ], '' ]
+    ]
+   */
 })();
 ```
 
