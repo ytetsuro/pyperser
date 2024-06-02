@@ -18,7 +18,8 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "pyodide": "^0.25.0"
+    "pyodide": "^0.25.0",
+    "tslib": "^2.6.2"
   },
   "devDependencies": {
     "@swc/core": "^1.4.13",
